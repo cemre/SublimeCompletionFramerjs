@@ -20,6 +20,12 @@ class FramerCompletion(sublime_plugin.EventListener):
 		for key in json_data:
 			doc_completions.append((key.encode('utf-8')+'\t'+"Framer",json_data[key]))
 	
+	# Add Shortcuts docs
+	with open(plugin_dir+"/framershortcuts.json") as json_file:
+		json_data = json.load(json_file)
+		for key in json_data:
+			doc_completions.append((key.encode('utf-8')+'\t'+"Framer",json_data[key]))
+	
 
 	def is_supported_file(self, file_path):
 		if file_path is not None: # only run on saved files
@@ -31,11 +37,16 @@ class FramerCompletion(sublime_plugin.EventListener):
 	def findViews(self, file_path):
 		with open(PathInfo(file_path).view_file) as file_lines:
 			dot_notation = self.settings.get('dotNotation')
+			shortcuts = self.settings.get('shortcuts')
 			self.completions[:] = [] # clear to refresh list
 			for line in file_lines:
 				if "name" in line:
 					pattern = r'"([^"]*)"' # inside quotes
 					viewname = re.findall(pattern, line)[1]	
+					if shortcuts:
+						view = viewname 
+						self.completions.append((view.encode('utf-8')+'\t'+"Framer view",view))
+
 					if dot_notation:
 						view = "PSD."+viewname
 					else:

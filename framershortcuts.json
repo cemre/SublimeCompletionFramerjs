@@ -1,0 +1,20 @@
+{
+    "getChild(name)": "getChild(${1})",
+    "getChildren(name)": "getChildren(${1})",
+    "Framer.utils.convertRange(OldMin, OldMax, OldValue, NewMin, NewMax)": "Framer.utils.convertRange(${1:OldMin}, ${2:OldMax}, ${3:OldValue, ${4:NewMin}, ${5:NewMax}})",
+    "hover(function, function)": "hover(function(){\n\t${1}\n}, function(){\n\t${2}\n})",
+    "animateTo(properties, time)": "animateTo({\n\t${1}\n})",
+    "slideFromLeft()": "slideFromLeft()",
+    "slideToLeft()": "slideToLeft()",
+    "slideFromRight()": "slideFromRight()",
+    "slideToRight()": "slideToRight()",
+    "slideFromTop()": "slideFromTop()",
+    "slideToTop()": "slideToTop()",
+    "slideFromBottom()": "slideFromBottom()",
+    "slideToBottom()": "slideToBottom()",
+    "show()": "show()",
+    "hide()": "hide()",
+    "fadeIn()": "fadeIn(${1:time})",
+    "fadeOut()": "fadeOut(${1:time})",
+    "tap(function)": "tap(function(){\n\t\n})"
+}

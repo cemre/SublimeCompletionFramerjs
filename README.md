@@ -1,3 +1,5 @@
+(This is a fork of SublimeCompletionFramerjs that supports Shortcuts for Framer)
+
 SublimeCompletionFramerjs
 =========================
 

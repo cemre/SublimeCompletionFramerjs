@@ -1,4 +1,5 @@
 {
+	"shortcuts": true,
 	"dotNotation": false, // set this to true if you prefer dot notation over brackets
 	"useCoffescript": false // TODO
 }
