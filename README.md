@@ -3,24 +3,19 @@
 SublimeCompletionFramerjs
 =========================
 
+# Installation
+
+1. [Download the repository](https://github.com/cemre/SublimeCompletionFramerjs/archive/master.zip) and unzip it
+2. In Finder, go to `~/Library/Application Support/Sublime Text 2/Packages/`
+3. Drag the unzipped `SublimeCompletionFramerjs` folder into the `Packages` folder you opened above.
+
+
+# Description
+
 This plugin adds Framer.js autocompletion for:
 
-1. The Framer docs
-2. Your exported views
+1. Framer built-in functions and variables
+2. Shortcuts for Framer functions
+2. Your exported views (as global variables)
 
-![View of autocomplete dropdown](http://cl.ly/image/2o043809262v/framercomplete.png "Completion dropdown")
-
-##Installation
-1. Place in `~/Library/Application Support/Sublime Text 2/Packages/SublimeCompletionFramerjs`
-
-##User specific settings
-To make user specific settings, copy the contents of FramerCompletion.sublime-settings and open Sublime Text 2. Go to: `Sublime Text 2 > Preferences > Package Settings > Framer Completion > Settings - User` and paste the contents there.
-
-###dotNotation
-Change to `true` if you want to use dot notation for the PSD autocomplete
-
-Set to `false` if you prefer bracket notation.
-
-##Stuff to do
-* Settings for Coffescript
-* Testing/optimization (threading?)
+![Autocomplete dropdown](https://cloud.githubusercontent.com/assets/200566/2812573/538953aa-ce62-11e3-9af0-1c403b8cc7ed.png)
